@@ -1,9 +1,13 @@
 {
   "name": "lab01-ui-avtomat-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "F.CSA313 Лаб 1 — Playwright ашиглан saucedemo.com-ийн UI автомат тест",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed --project=chromium",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
