@@ -42,7 +42,8 @@ test.describe('Нэвтрэх', () => {
 
     // Барааны жагсаалтын хуудас руу шилжсэн эсэх
     await expect(page).toHaveURL(/\/inventory\.html$/);
-    // Хуудасны гарчиг "Products" байх ёстой
+    // Хуудасны гарчиг "Products" харагдах ёстой (exact: true — зөвхөн яг энэ текст)
+    await expect(page.getByText('Products', { exact: true })).toBeVisible();
     await expect(page.getByTestId('title')).toHaveText('Products');
     // Бараанууд харагдаж байгаа эсэх (дор хаяж нэг)
     await expect(page.getByTestId('inventory-item').first()).toBeVisible();
