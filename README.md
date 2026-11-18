@@ -47,7 +47,7 @@ Playwright-ийн хамгийн мэдэгдэхүйц давуу тал нь *
 ## Codegen ба Trace viewer
 
 - `npx playwright codegen https://www.saucedemo.com` — хөтөч дээр хийсэн үйлдлийг шууд код болгодог. Codegen ч мөн `getByRole`, `locator('[data-test=...]')` зэрэг locator сонгодог. Гэхдээ assertion бараг нэмдэггүй, бүх үйлдлийг нэг урт тест болгодог. Өөрийн бичсэн тест маань давтагдах алхмыг `login()`, `logout()` функц болгож, үйлдэл бүрийн дараа үр дүнг `expect`-ээр шалгадаг.
-- Тестийг санаатайгаар унагахын тулд хүлээгдэж буй текстийг `'Products'`-аас `'Product'` болгож өөрчилсөн. Trace viewer дээр унасан алхам улаанаар тодорч, тухайн агшны DOM snapshot дээр бодит текст "Products" байгааг харж алдааг хурдан олсон.
+- Тестийг санаатайгаар унагахын тулд хүлээгдэж буй текстийг `'Products'`-аас `'Product'` болгож өөрчилсөн (дараа нь буцааж зассан). Тэр үеийн trace болон screenshot: [`report/traces/04-sanaatai-unagaasan-trace.zip`](report/traces/04-sanaatai-unagaasan-trace.zip), [`report/04-sanaatai-unagaasan-screenshot.png`](report/04-sanaatai-unagaasan-screenshot.png). Trace viewer дээр унасан алхам улаанаар тодорч, тухайн агшны DOM snapshot дээр бодит текст "Products" байгааг харж алдааг хурдан олсон.
 
 ## Нэмэлт даалгавар: AI-ийн өнцөг
 
